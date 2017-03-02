@@ -15,7 +15,7 @@ public class ActionParam {
 	}
 
 	public KeyValuePair<string, object>[] ToArray(){
-		return null != _param ? _param.ToArray(); new KeyValuePair<string, object>[0];
+		return _param == null ? _param.ToArray(): new KeyValuePair<string, object>[0];
 	}
 
 	public void Foreach(Func<string, object, bool> func){
@@ -48,7 +48,7 @@ public class ActionParam {
 		_value = value;
 	}
 
-	public Time GetValue<T>() where T : new(){
+	public T GetValue<T>() where T : new(){
 		return (T)_value;
 	}
 }

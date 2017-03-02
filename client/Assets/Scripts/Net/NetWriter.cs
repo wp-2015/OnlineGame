@@ -35,6 +35,10 @@ public class NetWriter {
 		}
 	}
 
+	public NetWriter(){
+		resetData();
+	}
+
 	public static bool IsGet{get;private set;}
 
 	public static ResponseContentType ResponseContentType{
@@ -106,5 +110,85 @@ public class NetWriter {
 		Buffer.BlockCopy(_bodyBuffer, 0, buffer, lenBytes.Length + _headBuffer.Length, _bodyBuffer.Length);
 
 		return buffer;
+	}
+
+	public void WriteInt32(string szKey, int nValue){
+		s_strUserData += string.Format("&{0}={1}", szKey, nValue);
+	}
+
+	public void writeFloat(string szKey, float fvalue){
+		s_strUserData += string.Format("&{0}={1}", szKey, fvalue);
+	}
+
+	public void writeString(string szKey, string szValue){
+		if(null == szValue){
+			return;
+		}
+		s_strUserData += string.Format("&{0}=", szKey);
+		s_strUserData += url_encode(szValue);
+	}
+
+	public void writeInt64(string szKey, string szValue){
+		s_strUserData += string.Format("&{0}={1}", szKey, szValue);
+	}
+
+	public void writeWord(string szKey, UInt16 sValue){
+		s_strUserData += string.Format("&{0}={1}", szKey, sValue);
+	}
+
+	public static void SetUrl(string szUrl){
+		SetUrl(szUrl, ResponseContentType.Stream);
+	}
+
+	public static void SetUrl(string szUrl, ResponseContentType respContentType, bool bIsGet = false){
+		s_strUrl = szUrl;
+		IsGet = bIsGet;
+		_respContentType = respContentType;
+	}
+
+	public static string GetUrl(){
+		return s_strUrl;
+	}
+
+	public static bool IsSocket(){
+		if(null != s_strUrl && !s_strUrl.Contains("http")){
+			return true;
+		}
+		return false;
+	}
+
+	public static string getMd5String(byte[] buf){
+		return Encryption.MD5Conversion(buf);
+	}
+
+	public static string getMd5String(string input)
+	{
+		return getMd5String(Encoding.Default.GetBytes(input));
+	}
+
+	public string url_encode(string str){
+		return WWW.EscapeURL(str);
+	}
+
+	public byte[] PostData(){
+		byte[] data;
+		if(null != _headBuffer && _headBuffer.Length > 0){
+			data = GetDataBuffer();
+		}else if(_respContentType == ResponseContentType.Json){
+			s_strPostData = s_strUserData + "&sign=" + getMd5String(s_strUserData + s_md5Key);
+			data = Encoding.UTF8.GetBytes(s_strPostData);
+		}else{
+			s_strPostData = IsSocket() ? "?d=" : "d=";
+			string str = s_strUserData + "&sign=" + getMd5String(s_strUserData + s_md5Key);
+			s_strPostData += url_encode(str);
+			data = Encoding.ASCII.GetBytes(s_strPostData);
+		}
+		if(!IsSocket()) return data;
+
+		byte[] len = BitConverter.GetBytes(data.Length);
+		byte[] sendBytes = new byte[data.Length + len.Length];
+		Buffer.BlockCopy(len, 0, sendBytes, 0, len.Length);
+		Buffer.BlockCopy(data, 0, sendBytes, len.Length, data.Length);
+		return sendBytes;
 	}
 }

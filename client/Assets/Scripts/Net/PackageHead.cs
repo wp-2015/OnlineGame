@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PackageHead : MonoBehaviour {
+public class PackageHead {
 
 	public PackageHead(int actionId){
 		this.ActionId = actionId;
