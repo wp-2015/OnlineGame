@@ -1,0 +1,15 @@
+package hrv;
+
+import "Request.proto";
+
+option java_package = "com.sixfoot.hrv.codec.protobuf";
+option java_outer_classname = "LoginReqProto";
+
+message LoginReq {
+	required string username = 1;
+	required string password = 2;
+	
+	extend Request {
+		optional LoginReq loginReq = 100;
+	}
+}
