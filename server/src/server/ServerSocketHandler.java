@@ -17,12 +17,13 @@ public class ServerSocketHandler extends IoHandlerAdapter {
 	@Override
 	public void sessionOpened(IoSession session) throws Exception {
 		logger.info("客户端打开 ： " + session.getId());
+		session.write("54323adsf");
 	}
 
 	@Override
 	public void messageReceived(IoSession session, Object message)
 			throws Exception {
-		logger.info("服务端收到信息 ： " + session.getId() + " message : " + message.toString());
+		logger.info("服务端收到信息" + message);
 		if (message.equals("bye")) {
 			session.close(true);
 		}
@@ -30,7 +31,7 @@ public class ServerSocketHandler extends IoHandlerAdapter {
 
 	@Override
 	public void messageSent(IoSession session, Object message) throws Exception {
-		logger.info("发送信息到客户端 , session : " + session.getId() + " message : " + message.toString());
+		logger.info("发送信息到客户端 , session : " + session.getId() + " message : " + message);
 	}
 
 	@Override

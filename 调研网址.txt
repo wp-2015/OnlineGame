@@ -1,3 +1,4 @@
 protobuf 
-	http://www.cnblogs.com/designyourdream/p/4267230.html
-	http://blog.csdn.net/shantsc/article/details/50729402
+	http://www.cnblogs.com/jhli/p/6139914.html
+	https://github.com/kenro/ChatRoom_Unity3d_Java
+	http://blog.csdn.net/u012632851/article/details/56489777
