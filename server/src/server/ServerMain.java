@@ -5,7 +5,10 @@ import org.apache.mina.core.session.IdleStatus;
 import org.apache.mina.filter.codec.ProtocolCodecFilter;
 import org.apache.mina.filter.codec.textline.LineDelimiter;
 import org.apache.mina.filter.codec.textline.TextLineCodecFactory;
+import org.apache.mina.filter.logging.LoggingFilter;
 import org.apache.mina.transport.socket.nio.NioSocketAcceptor;
+
+import server.codec.CustomMsgProtocolCodecFactory;
 
 import java.net.InetSocketAddress;
 import java.nio.charset.Charset;
@@ -14,7 +17,7 @@ import java.util.logging.Logger;;
 public class ServerMain {
 
 	public static Logger logger = Logger.getLogger(ServerMain.class.toString());
-	private static int PORT = 5000;
+	private static int PORT = 5001;
 	
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
@@ -22,7 +25,7 @@ public class ServerMain {
 		try {
 			acceptor = new NioSocketAcceptor();
 			
-			acceptor.getFilterChain().addLast("codec", new ProtocolCodecFilter(new TextLineCodecFactory(Charset.forName("UTF-8"), LineDelimiter.WINDOWS.getValue(), LineDelimiter.WINDOWS.getValue())));
+			acceptor.getFilterChain().addLast("coder", new ProtocolCodecFilter(new CustomMsgProtocolCodecFactory()));
 			
 			acceptor.getSessionConfig().setReadBufferSize(2048);
 			

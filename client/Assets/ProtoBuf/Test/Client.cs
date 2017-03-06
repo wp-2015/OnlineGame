@@ -33,10 +33,10 @@ public class Client : MonoBehaviour {
 			bIsSend = true;
 			Send("123");
 		}
-		if(null != receiveString && !receiveString.Equals("")){
-			Debug.Log(receiveString);
-			receiveString = "";
-		}
+//		if(null != receiveString && !receiveString.Equals("")){
+//			Debug.Log(receiveString);
+//			receiveString = "";
+//		}
 	}
 	bool ReceiveFlag = true;
 	void startReceive()
@@ -61,7 +61,24 @@ public class Client : MonoBehaviour {
 
 	public void Send(string str)
 	{
-		byte[] msg = serial();//Encoding.UTF8.GetBytes(str);
+		byte[] msg = serial();
+
+		byte[] data = new byte[4 + msg.Length];
+		byte[] len = BitConverter.GetBytes(msg.Length);
+		Debug.Log("len : " + len.Length);
+		Buffer.BlockCopy(len, 0, data, 0, 4);
+//		IntToBytes(msg.Length).CopyTo(data, 0);
+
+		Debug.Log("length : " + msg.Length);
+
+		Buffer.BlockCopy(msg, 0, data, 4,msg.Length);
+
+		foreach(var i in msg){
+			Debug.Log(i);
+		}
+
+
+		Debug.Log("head : " + BitConverter.ToInt32(data, 0));
 		IAsyncResult asyncSend = socket.BeginSend(msg, 0, msg.Length, SocketFlags.None, new AsyncCallback(SendData), socket);    //开始发送
 		bool success = asyncSend.AsyncWaitHandle.WaitOne(5000, true);
 		if (!success)
@@ -92,6 +109,16 @@ public class Client : MonoBehaviour {
 			ms.Read(data, 0, data.Length);
 			return data;
 		}
+	}
+
+	public static byte[] IntToBytes(int num)
+	{
+		byte[] bytes = new byte[4];
+		for (int i = 0; i < 4; i++)
+		{
+			bytes[i] = (byte)(num >> (24 - i * 8));
+		}
+		return bytes;
 	}
 
 }
