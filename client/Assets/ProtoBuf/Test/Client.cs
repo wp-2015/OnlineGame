@@ -64,7 +64,7 @@ public class Client : MonoBehaviour {
 		byte[] msg = serial();
 
 		byte[] data = new byte[4 + msg.Length];
-		byte[] len = BitConverter.GetBytes(msg.Length);
+		byte[] len = int2bytes(msg.Length);//BitConverter.GetBytes(msg.Length);
 		Debug.Log("len : " + len.Length);
 		Buffer.BlockCopy(len, 0, data, 0, 4);
 //		IntToBytes(msg.Length).CopyTo(data, 0);
@@ -88,6 +88,17 @@ public class Client : MonoBehaviour {
 			Debug.Log("success");
 		}
 	}
+
+	static byte[] int2bytes(int n)  
+	{  
+		byte[] targets = new byte[4];
+
+		targets[0] = (byte) (n & 0xff);// 最低位 
+		targets[1] = (byte) ((n >> 8) & 0xff);// 次低位 
+		targets[2] = (byte) ((n >> 16) & 0xff);// 次高位 
+		targets[3] = (byte) (n >> 24);// 最高位,无符号右移。 
+		return targets;   
+	}  
 
 	void SendData(IAsyncResult iar) //发送数据
 	{

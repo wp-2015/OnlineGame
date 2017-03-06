@@ -42,9 +42,9 @@ public class CustomMsgDecoder extends CumulativeProtocolDecoder{
 //					byte[] bytes = new byte[4];
 //					ioBuffer.get(bytes); // 读取4字节的Size
 //					
-//					for(int i = 0; i < 4; i++){
-//						logger.info("" + bytes[i]);
-//					}
+					for(int i = 0; i < 4; i++){
+						logger.info("" + bytes[i]);
+					}
 //					
 //					byteArrayOutputStream.write(bytes);
 //					int bodyLength = Tools.DataTypeTranslater.bytesToInt(bytes, 0) - Tools.DataTypeTranslater.INT_SIZE; // 按小字节序转int
