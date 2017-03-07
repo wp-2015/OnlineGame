@@ -1,0 +1,8 @@
+package NetServer;
+
+option java_package = "NetServer";
+option java_outer_classname = "NetServer";
+
+message Heartbeat{
+	optional string time = 1;
+}

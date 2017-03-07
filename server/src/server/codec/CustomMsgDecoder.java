@@ -1,8 +1,5 @@
 package server.codec;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
 import java.util.logging.Logger;
 
 import org.apache.mina.core.buffer.IoBuffer;
@@ -12,13 +9,10 @@ import org.apache.mina.filter.codec.ProtocolDecoderOutput;
 
 import com.proto.Custom;
 
-import server.ServerMain;
-
 public class CustomMsgDecoder extends CumulativeProtocolDecoder{
 
 	public static Logger logger = Logger.getLogger(CustomMsgDecoder.class.toString());
 	
-	private ByteArrayOutputStream byteArrayOutputStream;
 	@Override
 	protected boolean doDecode(IoSession session, IoBuffer ioBuffer, ProtocolDecoderOutput out) throws Exception {
 		// TODO 自动生成的方法存根
@@ -48,7 +42,7 @@ public class CustomMsgDecoder extends CumulativeProtocolDecoder{
 					logger.info("request  " + request.getStrSerialNumber());
 					logger.info("request  " + request.getStrUrl());
 					out.write(request);
-				}
+				} 
 				return true;// 这里有两种情况1：没数据了，那么就结束当前调用，有数据就再次调用
 			}
 		}
