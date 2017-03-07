@@ -64,22 +64,11 @@ public class Client : MonoBehaviour {
 		byte[] msg = serial();
 
 		byte[] data = new byte[4 + msg.Length];
-		byte[] len = int2bytes(msg.Length);//BitConverter.GetBytes(msg.Length);
-		Debug.Log("len : " + len.Length);
+		byte[] len = IntToBytes(msg.Length);
 		Buffer.BlockCopy(len, 0, data, 0, 4);
-//		IntToBytes(msg.Length).CopyTo(data, 0);
-
-		Debug.Log("length : " + msg.Length);
-
 		Buffer.BlockCopy(msg, 0, data, 4,msg.Length);
 
-		foreach(var i in msg){
-			Debug.Log(i);
-		}
-
-
-		Debug.Log("head : " + BitConverter.ToInt32(data, 0));
-		IAsyncResult asyncSend = socket.BeginSend(msg, 0, msg.Length, SocketFlags.None, new AsyncCallback(SendData), socket);    //开始发送
+		IAsyncResult asyncSend = socket.BeginSend(data, 0, data.Length, SocketFlags.None, new AsyncCallback(SendData), socket);    //开始发送
 		bool success = asyncSend.AsyncWaitHandle.WaitOne(5000, true);
 		if (!success)
 		{
@@ -88,17 +77,6 @@ public class Client : MonoBehaviour {
 			Debug.Log("success");
 		}
 	}
-
-	static byte[] int2bytes(int n)  
-	{  
-		byte[] targets = new byte[4];
-
-		targets[0] = (byte) (n & 0xff);// 最低位 
-		targets[1] = (byte) ((n >> 8) & 0xff);// 次低位 
-		targets[2] = (byte) ((n >> 16) & 0xff);// 次高位 
-		targets[3] = (byte) (n >> 24);// 最高位,无符号右移。 
-		return targets;   
-	}  
 
 	void SendData(IAsyncResult iar) //发送数据
 	{

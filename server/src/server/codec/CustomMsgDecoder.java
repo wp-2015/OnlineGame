@@ -21,54 +21,38 @@ public class CustomMsgDecoder extends CumulativeProtocolDecoder{
 	private ByteArrayOutputStream byteArrayOutputStream;
 	@Override
 	protected boolean doDecode(IoSession session, IoBuffer ioBuffer, ProtocolDecoderOutput out) throws Exception {
-		// 如果没有接收完Size部分（4字节），直接返回false
-				if (ioBuffer.remaining() < 4)
-					return false;
-				else {
-					// 标记开始位置，如果一条消息没传输完成则返回到这个位置
-					ioBuffer.mark();
-					
-					byte[] bytes = new byte[4];
-					ioBuffer.get(bytes);
-					ByteArrayInputStream buf = new ByteArrayInputStream(bytes);
+		// TODO 自动生成的方法存根
+		if (ioBuffer.remaining() < 4)// 这里很关键，网上很多代码都没有这句，是用来当拆包时候剩余长度小于4的时候的保护，不加就出错咯
+		{
+			logger.info("数据包长度不足");
+			return false;
+		}
+		if (ioBuffer.remaining() > 1) {
+			ioBuffer.mark();// 标记当前位置，以便reset
+			
+			int length = ioBuffer.getInt();
+			
+			if (length > ioBuffer.remaining()) {// 如果消息内容不够，则重置，相当于不读取size
+				logger.info("package notenough  left=" + ioBuffer.remaining() + " length=" + length);
+				ioBuffer.reset();
+				return false;// 接收新数据，以拼凑成完整数据
+			} else {
+				logger.info("package =" + ioBuffer.toString());
 
-					DataInputStream dis= new DataInputStream (buf);
-					
-					
-					
-					byteArrayOutputStream = new ByteArrayOutputStream();
+				byte[] bytes = new byte[length];
+				ioBuffer.get(bytes, 0, length);
 
-//					// 读取Size
-//					byte[] bytes = new byte[4];
-//					ioBuffer.get(bytes); // 读取4字节的Size
-//					
-					for(int i = 0; i < 4; i++){
-						logger.info("" + bytes[i]);
-					}
-//					
-//					byteArrayOutputStream.write(bytes);
-//					int bodyLength = Tools.DataTypeTranslater.bytesToInt(bytes, 0) - Tools.DataTypeTranslater.INT_SIZE; // 按小字节序转int
-					
-					logger.info("" + dis.readInt());
-
-					// 如果body没有接收完整，直接返回false
-//					if (ioBuffer.remaining() < bodyLength) {
-//						ioBuffer.reset(); // IoBuffer position回到原来标记的地方
-//						return false;
-//					} else {
-//						byte[] bodyBytes = new byte[bodyLength];
-//						ioBuffer.get(bodyBytes);
-////						String body = new String(bodyBytes, "UTF-8");
-//						byteArrayOutputStream.write(bodyBytes);
-//						
-//						// 创建对象
-////						NetworkPacket packetFromClient = new NetworkPacket(ioSession, byteArrayOutputStream.toByteArray());
-////						
-////						out.write(packetFromClient); // 解析出一条消息
-//						return true;
-//					}
-					return false;
+				Custom.LRequest request = Custom.LRequest.parseFrom(bytes);
+				if (null != request) {
+					logger.info("request  " + request.getNEmployeeID());
+					logger.info("request  " + request.getStrSerialNumber());
+					logger.info("request  " + request.getStrUrl());
+					out.write(request);
 				}
-	}
+				return true;// 这里有两种情况1：没数据了，那么就结束当前调用，有数据就再次调用
+			}
+		}
+		return false;// 处理成功，让父类进行接收下个包
+	} 
 
 }
