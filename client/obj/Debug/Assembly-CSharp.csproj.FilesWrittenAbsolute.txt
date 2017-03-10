@@ -22,3 +22,5 @@
 /Users/wp/Documents/unity3d/OnlineGame/client/obj/Debug/Assembly-CSharp.dll
 /Users/wp/Documents/unity3d/OnlineGame/client/obj/Debug/Assembly-CSharp.dll.mdb
 /Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/protobuf-net.dll
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/Debuger.dll
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/PureMVC.DotNET.35.dll
