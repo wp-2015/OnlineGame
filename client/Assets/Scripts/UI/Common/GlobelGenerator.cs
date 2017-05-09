@@ -20,6 +20,7 @@ public class GlobelGenerator : MonoBehaviour {
 
 			ApplicationFacade facade = ApplicationFacade.Instance as ApplicationFacade;
 			facade.SetUp(manager);
+			DestroyObject(gameObject);
 		}
 	}
 }

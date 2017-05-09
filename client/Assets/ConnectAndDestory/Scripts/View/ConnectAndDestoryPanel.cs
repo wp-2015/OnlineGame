@@ -16,6 +16,9 @@ public class ConnectAndDestoryPanel : MonoBehaviour {
 
 	private ConnectAndDestoryGride[,] grideList;
 
+	public string mapSizeConfig = "4,5\n2,1,1,1\n1,1,1\n1,1,1,2\n1,1,1";
+	public string mapTexConfig = "4,5\n1,2,3,1\n1,3,1\n2,1,2,2\n2,3,1";
+
 	void Start(){
 		grideList = new ConnectAndDestoryGride[RowCount,ColCount];
 		InitPanel();
@@ -40,17 +43,24 @@ public class ConnectAndDestoryPanel : MonoBehaviour {
 		int xCenter = ColCount / 2;
 		int yCenter = RowCount / 2;
 
+		float xLength = 0;
+		float yLength = 0;
+
 		for(int i = 0; i < RowCount; i++){
 			for(int j = 0; j < ColCount; j++){
 				GameObject go = Instantiate<GameObject>(Resources.Load("ConnectAndDestory/Gride") as GameObject);
 				if(null != go){
 					grideList[i,j] = go.GetComponent<ConnectAndDestoryGride>();
-				}
-				go.transform.SetParent(this.transform, false);
+					go.transform.SetParent(this.transform, false);
+					go.transform.localPosition = new Vector3(xLength, yLength);
 
-				go.transform.
+					ConnectAndDestoryGride gride = go.GetComponent<ConnectAndDestoryGride>();
+					if(null != gride){
+						xLength += gride.Width;
+						yLength += gride.Height;
+					}
+				}
 			}
 		}
-
 	}
 }

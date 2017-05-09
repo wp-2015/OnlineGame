@@ -4,7 +4,15 @@ using UnityEngine;
 
 public class ConnectAndDestoryGride : MonoBehaviour {
 
-	private UISprite FacadeSprite;
+	private UISprite facadeSprite;
+	private UISprite FacadeSprite{
+		get{
+			if(null == facadeSprite){
+				facadeSprite = gameObject.GetComponent<UISprite>();
+			}
+			return facadeSprite;
+		}
+	}
 	public int Width{
 		get{
 			if(!Utils.IsNull(FacadeSprite)){
@@ -22,13 +30,5 @@ public class ConnectAndDestoryGride : MonoBehaviour {
 		}
 	}
 
-	void OnAwake(){
-		InitProperites();
-	}
-
-	void InitProperites(){
-		FacadeSprite = gameObject.GetComponent<UISprite>();
-	}
-
-
+//	public void 
 }

@@ -26,10 +26,14 @@ public class ApplicationFacade : Facade{
 	protected override void InitializeController(){
 		base.InitializeController();
 		RegisterCommand(CommandName.STARTUP, typeof(StartUp));
+		RegisterCommand(CommandName.LOADUIROOT, typeof(LoadUIRoot));
 	}
 
 	public void SetUp(GameObject goGameManager){
 		SendNotification(CommandName.STARTUP, goGameManager);
 		RemoveCommand(CommandName.STARTUP);
+
+		SendNotification(CommandName.LOADUIROOT);
+		RemoveCommand(CommandName.LOADUIROOT);
 	}
 }
