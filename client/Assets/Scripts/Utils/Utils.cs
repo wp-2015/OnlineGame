@@ -12,7 +12,7 @@ public class Utils : MonoBehaviour{
 		return true;
 	}
 
-	public static GameObject LoadUIResource(string path, Transform tfParent){
+	public static GameObject LoadUIResource(string path, Transform tfParent = null){
 		GameObject go = Instantiate<GameObject>(Resources.Load(path) as GameObject);
 		if(null != go && null != tfParent){
 			go.transform.SetParent(tfParent);

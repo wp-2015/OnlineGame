@@ -1,0 +1,10 @@
+package onl;
+
+option java_package = "ClientSend";
+option java_outer_classname = "ClientSend";
+
+message User{
+	optional int32 account = 1;
+	optional string password = 2;
+	optional string nickname = 3;
+}
