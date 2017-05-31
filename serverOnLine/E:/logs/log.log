@@ -1,0 +1,67 @@
+2017-05-31 12:28:34,769 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2017-05-31 12:31:45,332 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2017-05-31 12:34:21,648 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2017-05-31 14:08:27,168 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2017-05-31 14:12:26,207 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2017-05-31 14:19:21,582 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2017-05-31 14:26:14,239 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2017-05-31 14:42:36,197 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2017-05-31 14:45:27,914 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2017-05-31 14:45:28,473 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-31 14:45:28,484 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-31 14:45:28,484 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-31 14:45:28,484 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-31 14:45:28,484 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-31 14:45:28,484 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-31 14:45:28,485 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-31 14:45:28,485 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-31 14:45:28,485 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-31 14:45:28,485 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-31 14:45:28,657 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-31 14:45:28,679 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9opvgv961bm6fjl|5e70a502,name=1bqpqjr9opvgv961bm6fjl|5e70a502 registered.
+2017-05-31 14:45:28,692 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9opvgv961bm6fjl|5e70a502,name=1bqpqjr9opvgv961bm6fjl|5e70a502 unregistered, in order to be reregistered after update.
+2017-05-31 14:45:28,692 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9opvgv961bm6fjl|5e70a502,name=1bqpqjr9opvgv961bm6fjl|5e70a502 registered.
+2017-05-31 14:45:28,779 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-31 14:45:28,801 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-31 14:45:28,821 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9opvgv961bm6fjl|5e70a502, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9opvgv961bm6fjl|5e70a502, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-31 14:45:28,833 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-31 14:45:28,833 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-31 14:45:28,833 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-31 14:45:28,833 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-31 14:45:28,835 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@6bcd3fdc config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-31 14:45:28,835 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-31 14:45:28,835 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-31 14:45:28,837 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-31 14:45:29,122 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@50eb019c [wrapping: com.mysql.jdbc.JDBC4Connection@36771836]]
+2017-05-31 14:45:29,127 DEBUG [mapper.UserMapper.insertUser] - ==>  Preparing: INSERT INTO user (account, password, nickname) VALUES (?, ?, ?); 
+2017-05-31 14:45:29,155 DEBUG [mapper.UserMapper.insertUser] - ==> Parameters: 0(Integer), 456456(String), snowball(String)
+2017-05-31 14:45:29,155 DEBUG [mapper.UserMapper.insertUser] - <==    Updates: 1
+2017-05-31 14:45:29,156 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==>  Preparing: select last_insert_id(); 
+2017-05-31 14:45:29,157 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==> Parameters: 
+2017-05-31 14:45:29,179 DEBUG [mapper.UserMapper.insertUser!selectKey] - <==      Total: 1
+2017-05-31 14:45:29,184 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@50eb019c [wrapping: com.mysql.jdbc.JDBC4Connection@36771836]]
+2017-05-31 14:46:28,838 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - Refurbishing idle resources - Wed May 31 14:46:28 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@6bcd3fdc]
+2017-05-31 14:46:28,839 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK.
+2017-05-31 14:46:28,839 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK.
+2017-05-31 14:46:28,841 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK has SUCCEEDED.
+2017-05-31 14:46:28,841 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK has SUCCEEDED.
+2017-05-31 14:47:28,840 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - Refurbishing idle resources - Wed May 31 14:47:28 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@6bcd3fdc]
+2017-05-31 14:47:28,840 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK.
+2017-05-31 14:47:28,840 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK.
+2017-05-31 14:47:28,843 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK has SUCCEEDED.
+2017-05-31 14:47:28,843 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK has SUCCEEDED.
+2017-05-31 14:48:28,844 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - Refurbishing idle resources - Wed May 31 14:48:28 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@6bcd3fdc]
+2017-05-31 14:48:28,844 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK.
+2017-05-31 14:48:28,844 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK.
+2017-05-31 14:48:28,845 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK has SUCCEEDED.
+2017-05-31 14:48:28,845 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK has SUCCEEDED.
+2017-05-31 14:49:28,849 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - Refurbishing idle resources - Wed May 31 14:49:28 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@6bcd3fdc]
+2017-05-31 14:49:28,849 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK.
+2017-05-31 14:49:28,849 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK.
+2017-05-31 14:49:28,849 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK has SUCCEEDED.
+2017-05-31 14:49:28,849 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK has SUCCEEDED.
+2017-05-31 14:50:28,854 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - Refurbishing idle resources - Wed May 31 14:50:28 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@6bcd3fdc]
+2017-05-31 14:50:28,854 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK.
+2017-05-31 14:50:28,854 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK.
+2017-05-31 14:50:28,854 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17fe6eb5] on IDLE CHECK has SUCCEEDED.
+2017-05-31 14:50:28,855 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool] - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a1646e7] on IDLE CHECK has SUCCEEDED.

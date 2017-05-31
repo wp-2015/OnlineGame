@@ -1,0 +1,14 @@
+2017-05-05 11:47:01,175 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-05 11:47:01,182 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-05 11:47:01,182 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-05 11:47:01,182 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-05 11:47:01,182 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-05 11:47:01,182 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-05 11:47:01,184 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-05 11:47:01,184 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-05 11:47:01,184 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-05 11:47:01,184 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-05 11:47:01,268 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-05 11:47:01,297 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqt49n1nkra3d4jwfqa|50eac852,name=1bqpqt49n1nkra3d4jwfqa|50eac852 registered.
+2017-05-05 11:47:01,312 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqt49n1nkra3d4jwfqa|50eac852,name=1bqpqt49n1nkra3d4jwfqa|50eac852 unregistered, in order to be reregistered after update.
+2017-05-05 11:47:01,312 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqt49n1nkra3d4jwfqa|50eac852,name=1bqpqt49n1nkra3d4jwfqa|50eac852 registered.

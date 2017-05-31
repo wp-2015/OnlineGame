@@ -1,0 +1,941 @@
+2017-05-22 14:07:53,349 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 14:07:53,447 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 14:07:53,447 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 14:07:53,447 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 14:07:53,447 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 14:07:53,447 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 14:07:53,449 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 14:07:53,449 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 14:07:53,449 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 14:07:53,449 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 14:07:53,743 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 14:07:53,770 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9ocz5vau1wqcww7|5fdcaa40,name=1bqpqjr9ocz5vau1wqcww7|5fdcaa40 registered.
+2017-05-22 14:07:53,790 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9ocz5vau1wqcww7|5fdcaa40,name=1bqpqjr9ocz5vau1wqcww7|5fdcaa40 unregistered, in order to be reregistered after update.
+2017-05-22 14:07:53,790 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9ocz5vau1wqcww7|5fdcaa40,name=1bqpqjr9ocz5vau1wqcww7|5fdcaa40 registered.
+2017-05-22 14:07:53,896 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 14:07:53,941 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 14:07:53,969 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9ocz5vau1wqcww7|5fdcaa40, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9ocz5vau1wqcww7|5fdcaa40, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 14:07:53,983 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 14:07:53,983 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 14:07:53,983 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 14:07:53,983 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 14:07:53,986 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@2d901eb0 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 14:07:53,986 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 14:07:53,986 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 14:07:53,987 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 14:07:54,256 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@72cc7e6f [wrapping: com.mysql.jdbc.JDBC4Connection@5afa3c9]]
+2017-05-22 14:07:54,261 DEBUG [mapper.UserMapper.findUserByName] - ==>  Preparing: SELECT * FROM playerNew where name like '%c%'; 
+2017-05-22 14:07:54,286 DEBUG [mapper.UserMapper.findUserByName] - ==> Parameters: 
+2017-05-22 14:07:54,304 DEBUG [mapper.UserMapper.findUserByName] - <==      Total: 1
+2017-05-22 14:12:03,633 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 14:12:03,640 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 14:12:03,640 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 14:12:03,640 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 14:12:03,640 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 14:12:03,641 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 14:12:03,646 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 14:12:03,646 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 14:12:03,646 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 14:12:03,646 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 14:12:03,738 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 14:12:03,786 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9oczb8bfdtsbn4|1ea9f6af,name=1bqpqjr9oczb8bfdtsbn4|1ea9f6af registered.
+2017-05-22 14:12:03,820 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9oczb8bfdtsbn4|1ea9f6af,name=1bqpqjr9oczb8bfdtsbn4|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 14:12:03,820 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9oczb8bfdtsbn4|1ea9f6af,name=1bqpqjr9oczb8bfdtsbn4|1ea9f6af registered.
+2017-05-22 14:12:03,894 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 14:12:03,939 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 14:12:03,970 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9oczb8bfdtsbn4|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9oczb8bfdtsbn4|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 14:12:03,982 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 14:12:03,982 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 14:12:03,982 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 14:12:03,982 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 14:12:03,983 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@3e27ba32 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 14:12:03,983 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 14:12:03,984 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 14:12:03,984 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 14:12:04,201 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@235ecd9f [wrapping: com.mysql.jdbc.JDBC4Connection@1ca3b418]]
+2017-05-22 14:12:04,207 DEBUG [mapper.UserMapper.findUserByName] - ==>  Preparing: SELECT * FROM playerNew where name like '%c%'; 
+2017-05-22 14:12:04,232 DEBUG [mapper.UserMapper.findUserByName] - ==> Parameters: 
+2017-05-22 14:12:04,251 DEBUG [mapper.UserMapper.findUserByName] - <==      Total: 1
+2017-05-22 15:19:21,167 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:19:21,173 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:19:21,173 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:19:21,173 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:19:21,173 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:19:21,173 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:19:21,176 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:19:21,176 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:19:21,176 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:19:21,176 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:19:21,264 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:19:21,292 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od1proz1g5weg|1ea9f6af,name=1bqpqjr9od1proz1g5weg|1ea9f6af registered.
+2017-05-22 15:19:21,308 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od1proz1g5weg|1ea9f6af,name=1bqpqjr9od1proz1g5weg|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:19:21,308 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od1proz1g5weg|1ea9f6af,name=1bqpqjr9od1proz1g5weg|1ea9f6af registered.
+2017-05-22 15:19:21,372 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 15:19:21,393 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 15:19:21,420 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od1proz1g5weg|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od1proz1g5weg|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 15:19:21,432 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:19:21,432 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:19:21,432 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:19:21,432 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:19:21,433 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@3012646b config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 15:19:21,434 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 15:19:21,434 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 15:19:21,434 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 15:19:21,649 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5824a83d [wrapping: com.mysql.jdbc.JDBC4Connection@537f60bf]]
+2017-05-22 15:19:21,654 DEBUG [mapper.UserMapper.insertUser] - ==>  Preparing: INSERT INTO user (account, password, nickname) VALUES (?, ?, ?); 
+2017-05-22 15:19:21,681 DEBUG [mapper.UserMapper.insertUser] - ==> Parameters: 0(Integer), qwertyuiop(String), rollinjsnowball(String)
+2017-05-22 15:19:21,682 DEBUG [mapper.UserMapper.insertUser] - <==    Updates: 1
+2017-05-22 15:19:21,684 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==>  Preparing: select last_insert_id(); 
+2017-05-22 15:19:21,684 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==> Parameters: 
+2017-05-22 15:19:21,702 DEBUG [mapper.UserMapper.insertUser!selectKey] - <==      Total: 1
+2017-05-22 15:20:58,258 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:20:58,264 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:20:58,264 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:20:58,264 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:20:58,264 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:20:58,264 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:20:58,269 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:20:58,269 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:20:58,269 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:20:58,269 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:20:58,351 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:20:58,380 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od1rulxu5pimk|1ea9f6af,name=1bqpqjr9od1rulxu5pimk|1ea9f6af registered.
+2017-05-22 15:20:58,397 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od1rulxu5pimk|1ea9f6af,name=1bqpqjr9od1rulxu5pimk|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:20:58,397 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od1rulxu5pimk|1ea9f6af,name=1bqpqjr9od1rulxu5pimk|1ea9f6af registered.
+2017-05-22 15:20:58,459 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 15:20:58,481 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 15:20:58,508 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od1rulxu5pimk|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od1rulxu5pimk|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 15:20:58,519 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:20:58,519 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:20:58,519 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:20:58,519 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:20:58,520 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@3012646b config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 15:20:58,520 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 15:20:58,520 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 15:20:58,520 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 15:20:58,736 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5824a83d [wrapping: com.mysql.jdbc.JDBC4Connection@537f60bf]]
+2017-05-22 15:20:58,741 DEBUG [mapper.UserMapper.insertUser] - ==>  Preparing: INSERT INTO user (account, password, nickname) VALUES (?, ?, ?); 
+2017-05-22 15:20:58,767 DEBUG [mapper.UserMapper.insertUser] - ==> Parameters: 0(Integer), qwertyuiop(String), rollinjsnowball(String)
+2017-05-22 15:20:58,767 DEBUG [mapper.UserMapper.insertUser] - <==    Updates: 1
+2017-05-22 15:20:58,769 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==>  Preparing: select last_insert_id(); 
+2017-05-22 15:20:58,769 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==> Parameters: 
+2017-05-22 15:20:58,787 DEBUG [mapper.UserMapper.insertUser!selectKey] - <==      Total: 1
+2017-05-22 15:20:58,795 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5824a83d [wrapping: com.mysql.jdbc.JDBC4Connection@537f60bf]]
+2017-05-22 15:23:51,158 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:23:51,165 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:23:51,165 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:23:51,165 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:23:51,165 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:23:51,165 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:23:51,173 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:23:51,173 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:23:51,173 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:23:51,173 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:23:51,259 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:23:51,294 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od1vk0v5x109x|1ea9f6af,name=1bqpqjr9od1vk0v5x109x|1ea9f6af registered.
+2017-05-22 15:23:51,310 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od1vk0v5x109x|1ea9f6af,name=1bqpqjr9od1vk0v5x109x|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:23:51,311 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od1vk0v5x109x|1ea9f6af,name=1bqpqjr9od1vk0v5x109x|1ea9f6af registered.
+2017-05-22 15:23:51,380 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 15:23:51,401 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 15:23:51,428 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od1vk0v5x109x|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od1vk0v5x109x|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 15:23:51,439 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:23:51,439 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:23:51,439 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:23:51,439 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:23:51,440 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@52719fb6 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 15:23:51,441 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 15:23:51,441 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 15:23:51,441 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 15:23:51,655 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 15:23:51,660 DEBUG [mapper.UserMapper.insertUser] - ==>  Preparing: INSERT INTO user (account, password, nickname) VALUES (?, ?, ?); 
+2017-05-22 15:23:51,687 DEBUG [mapper.UserMapper.insertUser] - ==> Parameters: 0(Integer), qwertyuiop(String), rollinjsnowball(String)
+2017-05-22 15:23:51,688 DEBUG [mapper.UserMapper.insertUser] - <==    Updates: 1
+2017-05-22 15:23:51,689 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==>  Preparing: select last_insert_id(); 
+2017-05-22 15:23:51,689 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==> Parameters: 
+2017-05-22 15:23:51,707 DEBUG [mapper.UserMapper.insertUser!selectKey] - <==      Total: 1
+2017-05-22 15:23:51,713 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 15:33:47,559 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:33:47,565 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:33:47,565 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:33:47,565 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:33:47,565 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:33:47,565 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:33:47,569 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:33:47,569 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:33:47,569 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:33:47,569 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:33:47,655 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:33:47,686 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od28c7e10ieiud|1ea9f6af,name=1bqpqjr9od28c7e10ieiud|1ea9f6af registered.
+2017-05-22 15:33:47,702 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od28c7e10ieiud|1ea9f6af,name=1bqpqjr9od28c7e10ieiud|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:33:47,702 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od28c7e10ieiud|1ea9f6af,name=1bqpqjr9od28c7e10ieiud|1ea9f6af registered.
+2017-05-22 15:33:47,770 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 15:33:47,791 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 15:33:47,818 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od28c7e10ieiud|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od28c7e10ieiud|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 15:33:47,830 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:33:47,830 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:33:47,830 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:33:47,830 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:33:47,832 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@52719fb6 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 15:33:47,832 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 15:33:47,832 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 15:33:47,832 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 15:33:48,048 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 15:33:48,054 DEBUG [mapper.UserMapper.deleteUserByAccount] - ==>  Preparing: delete from user where account = ? 
+2017-05-22 15:33:48,079 DEBUG [mapper.UserMapper.deleteUserByAccount] - ==> Parameters: 3(Integer)
+2017-05-22 15:33:48,080 DEBUG [mapper.UserMapper.deleteUserByAccount] - <==    Updates: 1
+2017-05-22 15:33:48,080 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 15:35:51,135 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:35:51,142 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:35:51,143 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:35:51,143 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:35:51,143 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:35:51,143 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:35:51,146 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:35:51,146 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:35:51,146 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:35:51,146 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:35:51,233 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:35:51,260 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2azk418rzga2|1ea9f6af,name=1bqpqjr9od2azk418rzga2|1ea9f6af registered.
+2017-05-22 15:35:51,282 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2azk418rzga2|1ea9f6af,name=1bqpqjr9od2azk418rzga2|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:35:51,282 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2azk418rzga2|1ea9f6af,name=1bqpqjr9od2azk418rzga2|1ea9f6af registered.
+2017-05-22 15:35:51,350 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 15:35:51,373 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 15:35:51,403 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od2azk418rzga2|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od2azk418rzga2|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 15:35:51,414 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:35:51,414 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:35:51,414 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:35:51,414 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:35:51,415 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@52719fb6 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 15:35:51,416 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 15:35:51,416 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 15:35:51,416 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 15:35:51,637 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 15:35:51,642 DEBUG [mapper.UserMapper.insertUser] - ==>  Preparing: INSERT INTO user (account, password, nickname) VALUES (?, ?, ?); 
+2017-05-22 15:35:51,673 DEBUG [mapper.UserMapper.insertUser] - ==> Parameters: 0(Integer), qwertyuiop(String), rollinjsnowball(String)
+2017-05-22 15:35:51,674 DEBUG [mapper.UserMapper.insertUser] - <==    Updates: 1
+2017-05-22 15:35:51,676 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==>  Preparing: select last_insert_id(); 
+2017-05-22 15:35:51,676 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==> Parameters: 
+2017-05-22 15:35:51,700 DEBUG [mapper.UserMapper.insertUser!selectKey] - <==      Total: 1
+2017-05-22 15:35:51,706 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 15:36:08,000 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:36:08,008 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:36:08,008 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:36:08,008 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:36:08,008 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:36:08,008 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:36:08,012 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:36:08,012 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:36:08,012 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:36:08,013 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:36:08,101 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:36:08,130 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2bckpjh3un4|1ea9f6af,name=1bqpqjr9od2bckpjh3un4|1ea9f6af registered.
+2017-05-22 15:36:08,154 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2bckpjh3un4|1ea9f6af,name=1bqpqjr9od2bckpjh3un4|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:36:08,154 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2bckpjh3un4|1ea9f6af,name=1bqpqjr9od2bckpjh3un4|1ea9f6af registered.
+2017-05-22 15:36:08,220 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 15:39:43,839 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:39:43,845 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:39:43,845 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:39:43,845 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:39:43,845 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:39:43,845 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:39:43,848 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:39:43,848 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:39:43,848 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:39:43,848 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:39:43,930 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:39:43,971 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2fz3z3bplo5|1ea9f6af,name=1bqpqjr9od2fz3z3bplo5|1ea9f6af registered.
+2017-05-22 15:39:43,987 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2fz3z3bplo5|1ea9f6af,name=1bqpqjr9od2fz3z3bplo5|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:39:43,989 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2fz3z3bplo5|1ea9f6af,name=1bqpqjr9od2fz3z3bplo5|1ea9f6af registered.
+2017-05-22 15:39:44,053 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 15:40:46,421 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:40:46,427 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:40:46,427 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:40:46,428 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:40:46,428 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:40:46,428 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:40:46,433 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:40:46,433 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:40:46,433 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:40:46,433 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:40:46,518 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:40:46,555 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2hbej13dknod|1ea9f6af,name=1bqpqjr9od2hbej13dknod|1ea9f6af registered.
+2017-05-22 15:40:46,572 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2hbej13dknod|1ea9f6af,name=1bqpqjr9od2hbej13dknod|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:40:46,572 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2hbej13dknod|1ea9f6af,name=1bqpqjr9od2hbej13dknod|1ea9f6af registered.
+2017-05-22 15:40:46,633 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 15:41:16,354 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:41:16,361 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:41:16,361 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:41:16,361 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:41:16,361 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:41:16,361 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:41:16,363 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:41:16,363 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:41:16,363 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:41:16,363 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:41:16,442 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:41:16,482 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2hyhukbalz8|1ea9f6af,name=1bqpqjr9od2hyhukbalz8|1ea9f6af registered.
+2017-05-22 15:41:16,498 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2hyhukbalz8|1ea9f6af,name=1bqpqjr9od2hyhukbalz8|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:41:16,498 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2hyhukbalz8|1ea9f6af,name=1bqpqjr9od2hyhukbalz8|1ea9f6af registered.
+2017-05-22 15:41:16,564 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 15:47:26,824 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 15:47:26,833 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 15:47:26,833 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:47:26,833 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:47:26,833 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:47:26,833 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:47:26,837 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 15:47:26,838 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 15:47:26,838 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 15:47:26,838 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 15:47:26,919 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 15:47:26,961 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2pwcu1rvhdwl|1ea9f6af,name=1bqpqjr9od2pwcu1rvhdwl|1ea9f6af registered.
+2017-05-22 15:47:26,976 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2pwcu1rvhdwl|1ea9f6af,name=1bqpqjr9od2pwcu1rvhdwl|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 15:47:26,976 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od2pwcu1rvhdwl|1ea9f6af,name=1bqpqjr9od2pwcu1rvhdwl|1ea9f6af registered.
+2017-05-22 15:47:27,040 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 16:12:22,077 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 16:12:22,082 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 16:12:22,083 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:12:22,083 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:12:22,083 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:12:22,083 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:12:22,087 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:12:22,087 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:12:22,087 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:12:22,087 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:12:22,171 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 16:12:22,212 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od3ly3mj9iy6z|1ea9f6af,name=1bqpqjr9od3ly3mj9iy6z|1ea9f6af registered.
+2017-05-22 16:12:22,229 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od3ly3mj9iy6z|1ea9f6af,name=1bqpqjr9od3ly3mj9iy6z|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 16:12:22,230 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od3ly3mj9iy6z|1ea9f6af,name=1bqpqjr9od3ly3mj9iy6z|1ea9f6af registered.
+2017-05-22 16:12:22,289 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 16:12:22,309 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 16:12:22,339 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od3ly3mj9iy6z|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od3ly3mj9iy6z|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 16:12:22,349 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:12:22,349 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:12:22,349 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:12:22,350 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:12:22,351 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@52719fb6 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 16:12:22,351 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 16:12:22,351 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 16:12:22,351 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 16:12:22,570 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:12:22,575 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==>  Preparing: delete from user where nickname = ? 
+2017-05-22 16:12:22,601 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==> Parameters: r(String)
+2017-05-22 16:12:22,602 DEBUG [mapper.UserMapper.deleteUserByNickname] - <==    Updates: 0
+2017-05-22 16:12:22,602 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:13:09,974 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 16:13:09,983 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 16:13:09,983 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:13:09,983 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:13:09,983 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:13:09,983 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:13:09,986 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:13:09,986 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:13:09,986 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:13:09,986 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:13:10,072 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 16:13:10,101 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od3mz253q2qzy|1ea9f6af,name=1bqpqjr9od3mz253q2qzy|1ea9f6af registered.
+2017-05-22 16:13:10,122 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od3mz253q2qzy|1ea9f6af,name=1bqpqjr9od3mz253q2qzy|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 16:13:10,122 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od3mz253q2qzy|1ea9f6af,name=1bqpqjr9od3mz253q2qzy|1ea9f6af registered.
+2017-05-22 16:13:10,186 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 16:13:10,208 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 16:13:10,235 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od3mz253q2qzy|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od3mz253q2qzy|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 16:13:10,246 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:13:10,246 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:13:10,246 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:13:10,247 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:13:10,248 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@52719fb6 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 16:13:10,248 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 16:13:10,248 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 16:13:10,248 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 16:13:10,462 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:13:10,467 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==>  Preparing: delete from user where nickname = ? 
+2017-05-22 16:13:10,492 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==> Parameters: rollinjsnowball(String)
+2017-05-22 16:13:10,493 DEBUG [mapper.UserMapper.deleteUserByNickname] - <==    Updates: 1
+2017-05-22 16:13:10,493 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:28:24,113 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 16:28:24,122 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 16:28:24,122 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:28:24,122 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:28:24,122 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:28:24,122 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:28:24,126 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:28:24,126 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:28:24,126 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:28:24,126 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:28:24,212 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 16:28:24,245 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od46kexu28uoh|1ea9f6af,name=1bqpqjr9od46kexu28uoh|1ea9f6af registered.
+2017-05-22 16:28:24,262 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od46kexu28uoh|1ea9f6af,name=1bqpqjr9od46kexu28uoh|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 16:28:24,263 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od46kexu28uoh|1ea9f6af,name=1bqpqjr9od46kexu28uoh|1ea9f6af registered.
+2017-05-22 16:28:24,325 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 16:28:24,347 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 16:28:24,373 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od46kexu28uoh|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od46kexu28uoh|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 16:28:24,384 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:28:24,385 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:28:24,385 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:28:24,385 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:28:24,386 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@52719fb6 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 16:28:24,386 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 16:28:24,386 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 16:28:24,386 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 16:28:24,600 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:28:24,605 DEBUG [mapper.UserMapper.insertUser] - ==>  Preparing: INSERT INTO user (account, password, nickname) VALUES (?, ?, ?); 
+2017-05-22 16:28:24,630 DEBUG [mapper.UserMapper.insertUser] - ==> Parameters: 0(Integer), qwertyuiop(String), rollinjsnowball(String)
+2017-05-22 16:28:24,631 DEBUG [mapper.UserMapper.insertUser] - <==    Updates: 1
+2017-05-22 16:28:24,633 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==>  Preparing: select last_insert_id(); 
+2017-05-22 16:28:24,633 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==> Parameters: 
+2017-05-22 16:28:24,652 DEBUG [mapper.UserMapper.insertUser!selectKey] - <==      Total: 1
+2017-05-22 16:28:24,660 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:28:49,134 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 16:28:49,141 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 16:28:49,141 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:28:49,141 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:28:49,141 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:28:49,141 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:28:49,146 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:28:49,146 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:28:49,146 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:28:49,146 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:28:49,237 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 16:28:49,266 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od473pz1n4glmr|1ea9f6af,name=1bqpqjr9od473pz1n4glmr|1ea9f6af registered.
+2017-05-22 16:28:49,287 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od473pz1n4glmr|1ea9f6af,name=1bqpqjr9od473pz1n4glmr|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 16:28:49,287 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od473pz1n4glmr|1ea9f6af,name=1bqpqjr9od473pz1n4glmr|1ea9f6af registered.
+2017-05-22 16:28:49,352 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 16:28:49,375 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 16:28:49,402 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od473pz1n4glmr|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od473pz1n4glmr|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 16:28:49,417 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:28:49,417 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:28:49,417 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:28:49,417 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:28:49,418 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@52719fb6 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 16:28:49,418 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 16:28:49,418 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 16:28:49,419 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 16:28:49,638 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:28:49,643 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==>  Preparing: delete from user where nickname = ? 
+2017-05-22 16:28:49,667 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==> Parameters: r(String)
+2017-05-22 16:28:49,667 DEBUG [mapper.UserMapper.deleteUserByNickname] - <==    Updates: 0
+2017-05-22 16:28:49,668 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:29:44,112 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 16:29:44,120 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 16:29:44,121 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:29:44,121 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:29:44,122 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:29:44,122 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:29:44,129 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:29:44,129 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:29:44,129 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:29:44,129 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:29:44,216 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 16:29:44,250 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od48a57myfa9u|1ea9f6af,name=1bqpqjr9od48a57myfa9u|1ea9f6af registered.
+2017-05-22 16:29:44,269 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od48a57myfa9u|1ea9f6af,name=1bqpqjr9od48a57myfa9u|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 16:29:44,269 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od48a57myfa9u|1ea9f6af,name=1bqpqjr9od48a57myfa9u|1ea9f6af registered.
+2017-05-22 16:29:44,337 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 16:29:44,359 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 16:29:44,386 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od48a57myfa9u|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od48a57myfa9u|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 16:29:44,397 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:29:44,397 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:29:44,397 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:29:44,397 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:29:44,399 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@52719fb6 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 16:29:44,399 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 16:29:44,399 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 16:29:44,399 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 16:29:44,617 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:29:44,622 DEBUG [mapper.UserMapper.updateUser] - ==>  Preparing: update user set password=?,nickname=? where account=? 
+2017-05-22 16:29:44,648 DEBUG [mapper.UserMapper.updateUser] - ==> Parameters: qwertyuiop1(String), rollinjsnowball1(String), 5(Integer)
+2017-05-22 16:29:44,649 DEBUG [mapper.UserMapper.updateUser] - <==    Updates: 1
+2017-05-22 16:29:44,650 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b36aa0c [wrapping: com.mysql.jdbc.JDBC4Connection@5824a83d]]
+2017-05-22 16:41:58,795 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 16:41:58,801 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 16:41:58,802 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:41:58,802 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:41:58,802 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:41:58,802 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:41:58,807 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:41:58,807 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:41:58,807 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:41:58,807 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:41:58,896 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 16:41:58,935 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od4o10xnzu2j9|1ea9f6af,name=1bqpqjr9od4o10xnzu2j9|1ea9f6af registered.
+2017-05-22 16:41:58,951 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od4o10xnzu2j9|1ea9f6af,name=1bqpqjr9od4o10xnzu2j9|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 16:41:58,952 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od4o10xnzu2j9|1ea9f6af,name=1bqpqjr9od4o10xnzu2j9|1ea9f6af registered.
+2017-05-22 16:41:59,017 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 16:41:59,041 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 16:41:59,067 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od4o10xnzu2j9|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od4o10xnzu2j9|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 16:41:59,081 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:41:59,082 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:41:59,082 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:41:59,082 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:41:59,083 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@65c7a252 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 16:41:59,083 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 16:41:59,083 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 16:41:59,083 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 16:41:59,296 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1e0b4072 [wrapping: com.mysql.jdbc.JDBC4Connection@791f145a]]
+2017-05-22 16:41:59,301 DEBUG [mapper.UserMapper.findUserByAccount] - ==>  Preparing: select * from user where account=? 
+2017-05-22 16:41:59,328 DEBUG [mapper.UserMapper.findUserByAccount] - ==> Parameters: 5(Integer)
+2017-05-22 16:41:59,345 DEBUG [mapper.UserMapper.findUserByAccount] - <==      Total: 1
+2017-05-22 16:41:59,351 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Resetting autocommit to true on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1e0b4072 [wrapping: com.mysql.jdbc.JDBC4Connection@791f145a]]
+2017-05-22 16:41:59,351 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Closing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1e0b4072 [wrapping: com.mysql.jdbc.JDBC4Connection@791f145a]]
+2017-05-22 16:43:45,723 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 16:43:45,729 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 16:43:45,729 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:43:45,729 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:43:45,729 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:43:45,729 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:43:45,733 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:43:45,733 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:43:45,733 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:43:45,733 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:43:45,818 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 16:43:45,848 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od4qbj312bj3bb|1ea9f6af,name=1bqpqjr9od4qbj312bj3bb|1ea9f6af registered.
+2017-05-22 16:43:45,865 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od4qbj312bj3bb|1ea9f6af,name=1bqpqjr9od4qbj312bj3bb|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 16:43:45,865 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od4qbj312bj3bb|1ea9f6af,name=1bqpqjr9od4qbj312bj3bb|1ea9f6af registered.
+2017-05-22 16:43:45,927 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 16:45:48,308 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 16:45:48,316 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 16:45:48,316 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:45:48,316 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:45:48,316 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:45:48,316 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:45:48,323 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 16:45:48,323 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 16:45:48,323 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 16:45:48,323 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 16:45:48,403 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 16:45:48,438 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od4sy4a94guy3|1ea9f6af,name=1bqpqjr9od4sy4a94guy3|1ea9f6af registered.
+2017-05-22 16:45:48,457 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od4sy4a94guy3|1ea9f6af,name=1bqpqjr9od4sy4a94guy3|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 16:45:48,457 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od4sy4a94guy3|1ea9f6af,name=1bqpqjr9od4sy4a94guy3|1ea9f6af registered.
+2017-05-22 16:45:48,518 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:06:48,903 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 17:06:48,911 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 17:06:48,911 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:06:48,911 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:06:48,911 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:06:48,911 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:06:48,914 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:06:48,914 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:06:48,914 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:06:48,914 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:06:48,999 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 17:06:49,031 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5jyssaqf38x|1ea9f6af,name=1bqpqjr9od5jyssaqf38x|1ea9f6af registered.
+2017-05-22 17:06:49,050 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5jyssaqf38x|1ea9f6af,name=1bqpqjr9od5jyssaqf38x|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 17:06:49,050 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5jyssaqf38x|1ea9f6af,name=1bqpqjr9od5jyssaqf38x|1ea9f6af registered.
+2017-05-22 17:06:49,115 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:07:03,570 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 17:07:03,576 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 17:07:03,576 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:07:03,576 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:07:03,576 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:07:03,576 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:07:03,579 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:07:03,579 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:07:03,579 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:07:03,579 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:07:03,660 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 17:07:03,686 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|619713e5,name=1bqpqjr9od5ka4413vq1eo|619713e5 registered.
+2017-05-22 17:07:03,705 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|619713e5,name=1bqpqjr9od5ka4413vq1eo|619713e5 unregistered, in order to be reregistered after update.
+2017-05-22 17:07:03,705 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|619713e5,name=1bqpqjr9od5ka4413vq1eo|619713e5 registered.
+2017-05-22 17:07:03,769 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:07:03,791 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 17:07:03,819 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od5ka4413vq1eo|619713e5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od5ka4413vq1eo|619713e5, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 17:07:03,831 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:07:03,831 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:07:03,831 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:07:03,831 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:07:03,833 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@130c12b7 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 17:07:03,833 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 17:07:03,833 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 17:07:03,833 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 17:07:04,046 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2e3967ea [wrapping: com.mysql.jdbc.JDBC4Connection@70e9c95d]]
+2017-05-22 17:07:04,051 DEBUG [mapper.UserMapper.insertUser] - ==>  Preparing: INSERT INTO user (account, password, nickname) VALUES (?, ?, ?); 
+2017-05-22 17:07:04,076 DEBUG [mapper.UserMapper.insertUser] - ==> Parameters: 0(Integer), qwertyuiop(String), rollinjsnowball(String)
+2017-05-22 17:07:04,076 DEBUG [mapper.UserMapper.insertUser] - <==    Updates: 1
+2017-05-22 17:07:04,078 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==>  Preparing: select last_insert_id(); 
+2017-05-22 17:07:04,078 DEBUG [mapper.UserMapper.insertUser!selectKey] - ==> Parameters: 
+2017-05-22 17:07:04,096 DEBUG [mapper.UserMapper.insertUser!selectKey] - <==      Total: 1
+2017-05-22 17:07:04,105 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2e3967ea [wrapping: com.mysql.jdbc.JDBC4Connection@70e9c95d]]
+2017-05-22 17:07:04,124 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|1ca3b418,name=1bqpqjr9od5ka4413vq1eo|1ca3b418 registered.
+2017-05-22 17:07:04,132 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|1ca3b418,name=1bqpqjr9od5ka4413vq1eo|1ca3b418 unregistered, in order to be reregistered after update.
+2017-05-22 17:07:04,132 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|1ca3b418,name=1bqpqjr9od5ka4413vq1eo|1ca3b418 registered.
+2017-05-22 17:07:04,155 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 17:07:04,168 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od5ka4413vq1eo|1ca3b418, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od5ka4413vq1eo|1ca3b418, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 17:07:04,171 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@a1f72f5 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 17:07:04,171 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 17:07:04,171 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 17:07:04,171 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 17:07:04,183 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@75c56eb9 [wrapping: com.mysql.jdbc.JDBC4Connection@4bc222e]]
+2017-05-22 17:07:04,184 DEBUG [mapper.UserMapper.deleteUserByAccount] - ==>  Preparing: delete from user where account = ? 
+2017-05-22 17:07:04,184 DEBUG [mapper.UserMapper.deleteUserByAccount] - ==> Parameters: 3(Integer)
+2017-05-22 17:07:04,184 DEBUG [mapper.UserMapper.deleteUserByAccount] - <==    Updates: 0
+2017-05-22 17:07:04,184 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@75c56eb9 [wrapping: com.mysql.jdbc.JDBC4Connection@4bc222e]]
+2017-05-22 17:07:04,198 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|56dc1551,name=1bqpqjr9od5ka4413vq1eo|56dc1551 registered.
+2017-05-22 17:07:04,210 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|56dc1551,name=1bqpqjr9od5ka4413vq1eo|56dc1551 unregistered, in order to be reregistered after update.
+2017-05-22 17:07:04,211 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|56dc1551,name=1bqpqjr9od5ka4413vq1eo|56dc1551 registered.
+2017-05-22 17:07:04,225 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 17:07:04,234 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od5ka4413vq1eo|56dc1551, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od5ka4413vq1eo|56dc1551, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 17:07:04,236 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@13bc8645 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 17:07:04,236 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 17:07:04,236 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 17:07:04,236 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 17:07:04,244 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@cd1e646 [wrapping: com.mysql.jdbc.JDBC4Connection@7ba8c737]]
+2017-05-22 17:07:04,247 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==>  Preparing: delete from user where nickname = ? 
+2017-05-22 17:07:04,247 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==> Parameters: rollinjsnowball(String)
+2017-05-22 17:07:04,251 DEBUG [mapper.UserMapper.deleteUserByNickname] - <==    Updates: 1
+2017-05-22 17:07:04,251 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@cd1e646 [wrapping: com.mysql.jdbc.JDBC4Connection@7ba8c737]]
+2017-05-22 17:07:04,266 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|26adfd2d,name=1bqpqjr9od5ka4413vq1eo|26adfd2d registered.
+2017-05-22 17:07:04,272 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|26adfd2d,name=1bqpqjr9od5ka4413vq1eo|26adfd2d unregistered, in order to be reregistered after update.
+2017-05-22 17:07:04,273 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|26adfd2d,name=1bqpqjr9od5ka4413vq1eo|26adfd2d registered.
+2017-05-22 17:07:04,280 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 17:07:04,296 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od5ka4413vq1eo|26adfd2d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od5ka4413vq1eo|26adfd2d, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 17:07:04,296 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@39b43d60 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 17:07:04,297 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 17:07:04,298 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 17:07:04,298 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 17:07:04,305 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@72ef8d15 [wrapping: com.mysql.jdbc.JDBC4Connection@6aa8e115]]
+2017-05-22 17:07:04,305 DEBUG [mapper.UserMapper.updateUser] - ==>  Preparing: update user set password=?,nickname=? where account=? 
+2017-05-22 17:07:04,306 DEBUG [mapper.UserMapper.updateUser] - ==> Parameters: qwertyuiop1(String), rollinjsnowball1(String), 5(Integer)
+2017-05-22 17:07:04,306 DEBUG [mapper.UserMapper.updateUser] - <==    Updates: 1
+2017-05-22 17:07:04,306 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@72ef8d15 [wrapping: com.mysql.jdbc.JDBC4Connection@6aa8e115]]
+2017-05-22 17:07:04,325 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|3fce8fd9,name=1bqpqjr9od5ka4413vq1eo|3fce8fd9 registered.
+2017-05-22 17:07:04,331 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|3fce8fd9,name=1bqpqjr9od5ka4413vq1eo|3fce8fd9 unregistered, in order to be reregistered after update.
+2017-05-22 17:07:04,331 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|3fce8fd9,name=1bqpqjr9od5ka4413vq1eo|3fce8fd9 registered.
+2017-05-22 17:07:04,341 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 17:07:04,351 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od5ka4413vq1eo|3fce8fd9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od5ka4413vq1eo|3fce8fd9, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 17:07:04,352 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@4ea5b703 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 17:07:04,353 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 17:07:04,353 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 17:07:04,353 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 17:07:04,361 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2cb2fc20 [wrapping: com.mysql.jdbc.JDBC4Connection@4f4c4b1a]]
+2017-05-22 17:07:04,362 DEBUG [mapper.UserMapper.findUserByAccount] - ==>  Preparing: select * from user where account=? 
+2017-05-22 17:07:04,362 DEBUG [mapper.UserMapper.findUserByAccount] - ==> Parameters: 5(Integer)
+2017-05-22 17:07:04,364 DEBUG [mapper.UserMapper.findUserByAccount] - <==      Total: 1
+2017-05-22 17:07:04,364 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Resetting autocommit to true on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2cb2fc20 [wrapping: com.mysql.jdbc.JDBC4Connection@4f4c4b1a]]
+2017-05-22 17:07:04,364 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Closing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2cb2fc20 [wrapping: com.mysql.jdbc.JDBC4Connection@4f4c4b1a]]
+2017-05-22 17:07:04,378 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|748741cb,name=1bqpqjr9od5ka4413vq1eo|748741cb registered.
+2017-05-22 17:07:04,389 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|748741cb,name=1bqpqjr9od5ka4413vq1eo|748741cb unregistered, in order to be reregistered after update.
+2017-05-22 17:07:04,389 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|748741cb,name=1bqpqjr9od5ka4413vq1eo|748741cb registered.
+2017-05-22 17:07:04,434 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|68034211,name=1bqpqjr9od5ka4413vq1eo|68034211 registered.
+2017-05-22 17:07:04,444 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|68034211,name=1bqpqjr9od5ka4413vq1eo|68034211 unregistered, in order to be reregistered after update.
+2017-05-22 17:07:04,445 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ka4413vq1eo|68034211,name=1bqpqjr9od5ka4413vq1eo|68034211 registered.
+2017-05-22 17:07:29,940 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 17:07:29,947 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 17:07:29,947 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:07:29,947 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:07:29,947 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:07:29,947 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:07:29,956 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:07:29,956 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:07:29,956 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:07:29,956 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:07:30,039 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 17:07:30,072 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5kugt4h3m6y|1ea9f6af,name=1bqpqjr9od5kugt4h3m6y|1ea9f6af registered.
+2017-05-22 17:07:30,087 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5kugt4h3m6y|1ea9f6af,name=1bqpqjr9od5kugt4h3m6y|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 17:07:30,087 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5kugt4h3m6y|1ea9f6af,name=1bqpqjr9od5kugt4h3m6y|1ea9f6af registered.
+2017-05-22 17:07:30,154 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:07:52,002 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 17:07:52,007 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 17:07:52,008 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:07:52,008 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:07:52,008 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:07:52,008 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:07:52,012 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:07:52,012 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:07:52,012 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:07:52,012 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:07:52,100 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 17:07:52,143 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5lbhkdqupzf|1ea9f6af,name=1bqpqjr9od5lbhkdqupzf|1ea9f6af registered.
+2017-05-22 17:07:52,158 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5lbhkdqupzf|1ea9f6af,name=1bqpqjr9od5lbhkdqupzf|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 17:07:52,158 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5lbhkdqupzf|1ea9f6af,name=1bqpqjr9od5lbhkdqupzf|1ea9f6af registered.
+2017-05-22 17:07:52,222 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:11:39,633 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 17:11:39,639 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 17:11:39,639 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:11:39,639 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:11:39,639 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:11:39,639 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:11:39,643 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:11:39,643 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:11:39,643 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:11:39,643 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:11:39,729 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 17:11:39,776 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5q74m1lgu4yx|1ea9f6af,name=1bqpqjr9od5q74m1lgu4yx|1ea9f6af registered.
+2017-05-22 17:11:39,797 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5q74m1lgu4yx|1ea9f6af,name=1bqpqjr9od5q74m1lgu4yx|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 17:11:39,797 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5q74m1lgu4yx|1ea9f6af,name=1bqpqjr9od5q74m1lgu4yx|1ea9f6af registered.
+2017-05-22 17:11:39,867 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:14:58,976 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 17:14:58,982 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 17:14:58,982 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:14:58,982 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:14:58,983 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:14:58,983 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:14:58,985 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:14:58,985 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:14:58,985 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:14:58,985 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:14:59,070 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 17:14:59,100 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ugxx1bt09y3|1ea9f6af,name=1bqpqjr9od5ugxx1bt09y3|1ea9f6af registered.
+2017-05-22 17:14:59,121 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ugxx1bt09y3|1ea9f6af,name=1bqpqjr9od5ugxx1bt09y3|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 17:14:59,121 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5ugxx1bt09y3|1ea9f6af,name=1bqpqjr9od5ugxx1bt09y3|1ea9f6af registered.
+2017-05-22 17:14:59,184 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:18:27,307 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 17:18:27,314 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 17:18:27,315 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:18:27,315 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:18:27,315 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:18:27,315 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:18:27,324 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:18:27,324 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:18:27,325 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:18:27,325 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:18:27,407 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 17:18:27,443 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5yxp2ofdc48|1ea9f6af,name=1bqpqjr9od5yxp2ofdc48|1ea9f6af registered.
+2017-05-22 17:18:27,459 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5yxp2ofdc48|1ea9f6af,name=1bqpqjr9od5yxp2ofdc48|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 17:18:27,459 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od5yxp2ofdc48|1ea9f6af,name=1bqpqjr9od5yxp2ofdc48|1ea9f6af registered.
+2017-05-22 17:18:27,525 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:18:27,548 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 17:18:27,581 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od5yxp2ofdc48|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od5yxp2ofdc48|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 17:18:27,593 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:18:27,593 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:18:27,593 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:18:27,594 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:18:27,595 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@537f60bf config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 17:18:27,595 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 17:18:27,595 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 17:18:27,595 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 17:18:27,815 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4d154ccd [wrapping: com.mysql.jdbc.JDBC4Connection@229c6181]]
+2017-05-22 17:18:27,821 DEBUG [mapper.UserMapper.findUserByNickname] - ==>  Preparing: SELECT * FROM user where nickname like '%?%'; 
+2017-05-22 17:18:27,872 DEBUG [com.mchange.v2.c3p0.impl.NewPooledConnection] - com.mchange.v2.c3p0.impl.NewPooledConnection@1348a0d5 handling a throwable.
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3326)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3310)
+	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4146)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.setString(NewProxyPreparedStatement.java:540)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:70)
+	at com.sun.proxy.$Proxy7.setString(Unknown Source)
+	at org.apache.ibatis.type.StringTypeHandler.setNonNullParameter(StringTypeHandler.java:31)
+	at org.apache.ibatis.type.StringTypeHandler.setNonNullParameter(StringTypeHandler.java:26)
+	at org.apache.ibatis.type.BaseTypeHandler.setParameter(BaseTypeHandler.java:50)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:81)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:80)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:61)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:59)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:119)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy5.findUserByNickname(Unknown Source)
+	at cn.wp.test.TestMapper.findUser2(TestMapper.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2017-05-22 17:18:27,876 DEBUG [com.mchange.v2.sql.SqlUtils] - Attempted to convert SQLException to SQLException. Leaving it alone. [SQLState: S1009; errorCode: 0]
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3326)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3310)
+	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4146)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.setString(NewProxyPreparedStatement.java:540)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:70)
+	at com.sun.proxy.$Proxy7.setString(Unknown Source)
+	at org.apache.ibatis.type.StringTypeHandler.setNonNullParameter(StringTypeHandler.java:31)
+	at org.apache.ibatis.type.StringTypeHandler.setNonNullParameter(StringTypeHandler.java:26)
+	at org.apache.ibatis.type.BaseTypeHandler.setParameter(BaseTypeHandler.java:50)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:81)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:80)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:61)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:59)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:119)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy5.findUserByNickname(Unknown Source)
+	at cn.wp.test.TestMapper.findUser2(TestMapper.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2017-05-22 17:18:27,877 DEBUG [com.mchange.v2.c3p0.impl.DefaultConnectionTester] - Testing a Connection in response to an Exception:
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3326)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3310)
+	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4146)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.setString(NewProxyPreparedStatement.java:540)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:70)
+	at com.sun.proxy.$Proxy7.setString(Unknown Source)
+	at org.apache.ibatis.type.StringTypeHandler.setNonNullParameter(StringTypeHandler.java:31)
+	at org.apache.ibatis.type.StringTypeHandler.setNonNullParameter(StringTypeHandler.java:26)
+	at org.apache.ibatis.type.BaseTypeHandler.setParameter(BaseTypeHandler.java:50)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:81)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:80)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:61)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:59)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:119)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy5.findUserByNickname(Unknown Source)
+	at cn.wp.test.TestMapper.findUser2(TestMapper.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2017-05-22 17:20:14,158 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 17:20:14,166 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 17:20:14,167 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:20:14,167 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:20:14,167 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:20:14,167 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:20:14,174 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:20:14,174 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:20:14,174 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:20:14,174 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:20:14,261 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 17:20:14,300 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od618551i1g4m4|1ea9f6af,name=1bqpqjr9od618551i1g4m4|1ea9f6af registered.
+2017-05-22 17:20:14,317 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od618551i1g4m4|1ea9f6af,name=1bqpqjr9od618551i1g4m4|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 17:20:14,318 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od618551i1g4m4|1ea9f6af,name=1bqpqjr9od618551i1g4m4|1ea9f6af registered.
+2017-05-22 17:20:14,387 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:20:14,434 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 17:20:14,469 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od618551i1g4m4|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od618551i1g4m4|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 17:20:14,483 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:20:14,483 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:20:14,483 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:20:14,483 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:20:14,484 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@3e27ba32 config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 17:20:14,484 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 17:20:14,484 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 17:20:14,484 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 17:20:14,705 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@235ecd9f [wrapping: com.mysql.jdbc.JDBC4Connection@1ca3b418]]
+2017-05-22 17:20:14,710 DEBUG [mapper.UserMapper.findUserByNickname] - ==>  Preparing: SELECT * FROM user where nickname like '%r%'; 
+2017-05-22 17:20:14,737 DEBUG [mapper.UserMapper.findUserByNickname] - ==> Parameters: 
+2017-05-22 17:20:14,761 DEBUG [mapper.UserMapper.findUserByNickname] - <==      Total: 1
+2017-05-22 17:20:14,767 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Resetting autocommit to true on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@235ecd9f [wrapping: com.mysql.jdbc.JDBC4Connection@1ca3b418]]
+2017-05-22 17:20:14,768 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Closing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@235ecd9f [wrapping: com.mysql.jdbc.JDBC4Connection@1ca3b418]]
+2017-05-22 17:31:49,844 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-05-22 17:31:49,850 DEBUG [com.mchange.v2.log.MLog] - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+2017-05-22 17:31:49,850 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:31:49,850 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:31:49,850 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:31:49,850 DEBUG [com.mchange.v2.log.MLog] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:31:49,852 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:31:49,852 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:31:49,853 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:31:49,853 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:31:49,939 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-05-22 17:31:49,982 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od6g4xlmvg8v2|1ea9f6af,name=1bqpqjr9od6g4xlmvg8v2|1ea9f6af registered.
+2017-05-22 17:31:49,999 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od6g4xlmvg8v2|1ea9f6af,name=1bqpqjr9od6g4xlmvg8v2|1ea9f6af unregistered, in order to be reregistered after update.
+2017-05-22 17:31:49,999 DEBUG [com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean] - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1bqpqjr9od6g4xlmvg8v2|1ea9f6af,name=1bqpqjr9od6g4xlmvg8v2|1ea9f6af registered.
+2017-05-22 17:31:50,067 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-05-22 17:31:50,110 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-05-22 17:31:50,141 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqpqjr9od6g4xlmvg8v2|1ea9f6af, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpqjr9od6g4xlmvg8v2|1ea9f6af, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/online_entry?characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> SELECT 1, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-05-22 17:31:50,152 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+2017-05-22 17:31:50,153 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+2017-05-22 17:31:50,153 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+2017-05-22 17:31:50,153 DEBUG [com.mchange.v2.cfg.MConfig] - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+2017-05-22 17:31:50,154 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool@2af004b config: [start -> 3; min -> 3; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; max_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+2017-05-22 17:31:50,154 DEBUG [com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager] - Created new pool for auth, username (masked): 'ro******'.
+2017-05-22 17:31:50,154 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-05-22 17:31:50,155 DEBUG [com.mchange.v2.resourcepool.BasicResourcePool] - awaitAvailable(): [unknown]
+2017-05-22 17:31:50,368 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3e8c3cb [wrapping: com.mysql.jdbc.JDBC4Connection@563f38c4]]
+2017-05-22 17:31:50,373 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==>  Preparing: delete from user where nickname like '%r%'; 
+2017-05-22 17:31:50,398 DEBUG [mapper.UserMapper.deleteUserByNickname] - ==> Parameters: 
+2017-05-22 17:31:50,399 DEBUG [mapper.UserMapper.deleteUserByNickname] - <==    Updates: 1
+2017-05-22 17:31:50,399 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Committing JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3e8c3cb [wrapping: com.mysql.jdbc.JDBC4Connection@563f38c4]]
