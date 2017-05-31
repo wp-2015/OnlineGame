@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using PureMVC.Patterns;
+using PureMVC.Interfaces;
 
 public class LoginRegister : MonoBehaviour {
 
@@ -11,6 +13,9 @@ public class LoginRegister : MonoBehaviour {
 	public Action actionLogin;
 	public Action actionRegister;
 
+	void Awake(){
+	}
+
 	public void login(){
 		if(null != actionLogin){
 			actionLogin();
@@ -18,6 +23,7 @@ public class LoginRegister : MonoBehaviour {
 	}
 
 	public void register(){
+		Debug.Log("register.....");
 		if(null != actionRegister){
 			actionRegister();
 		}

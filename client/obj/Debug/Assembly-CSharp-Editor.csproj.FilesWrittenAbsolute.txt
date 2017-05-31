@@ -41,3 +41,11 @@
 /Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.dll
 /Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.xml
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/ICSharpCode.SharpZipLib.dll
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/NPOI.dll
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/NPOI.OOXML.dll
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/NPOI.OpenXml4Net.dll
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/NPOI.OpenXmlFormats.dll
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/System.Data.dll
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/UnityEditor.iOS.Extensions.dll
+/Users/wp/Documents/unity3d/OnlineGame/client/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll

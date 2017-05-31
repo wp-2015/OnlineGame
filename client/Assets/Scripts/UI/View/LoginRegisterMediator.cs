@@ -5,18 +5,22 @@ using PureMVC.Patterns;
 
 public class LoginRegisterMediator : Mediator {
 
-	public const string NAME = "LoginRegisterMediator";
+	public const string SIGN = "LoginRegisterMediator";
 
-	public LoginRegisterMediator(LoginRegister view) : base(NAME, view){
-		view.actionLogin += login;
-		view.actionRegister = register;
+	private LoginRegister loginView;
+
+	public LoginRegisterMediator(LoginRegister view) : base(SIGN, view){
+		this.loginView = view;
+		view.actionLogin += OnLogin;
+		view.actionRegister += OnRegisterInfo;
 	}
 
-	void login(){
+	void OnLogin(){
 		Debug.Log("login.");
 	}
 
-	void register(){
+	void OnRegisterInfo(){
 		Debug.Log("register");
+		SendNotification(CommandName.CHANGEPAGE, loginView.transform.parent.gameObject, CommandName.REGISTER);
 	}
 }
