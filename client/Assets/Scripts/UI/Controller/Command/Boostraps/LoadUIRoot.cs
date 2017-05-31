@@ -32,6 +32,5 @@ public class LoadUIRoot : SimpleCommand {
 			Register register = tfRegister.gameObject.GetComponent<Register>();
 			Facade.RegisterMediator(new RegisterMediator(register));
 		}
-
 	}
 }

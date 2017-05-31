@@ -8,3 +8,7 @@ message User{
 	optional string password = 2;
 	optional string nickname = 3;
 }
+
+message VerificationCode{
+	optional int32 account = 1;
+}
