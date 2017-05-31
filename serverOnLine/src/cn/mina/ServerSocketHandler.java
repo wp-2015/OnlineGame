@@ -8,7 +8,6 @@ import org.apache.mina.core.session.IoSession;
 
 import cn.mina.distribute.MsgPackage;
 import cn.mina.msg.MsgHandle;
-import cn.mina.msghandle.Login;
 
 public class ServerSocketHandler extends IoHandlerAdapter {
 	public static Logger logger = Logger.getLogger(ServerSocketHandler.class.toString());

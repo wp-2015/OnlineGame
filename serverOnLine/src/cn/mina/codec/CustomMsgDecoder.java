@@ -1,6 +1,5 @@
 package cn.mina.codec;
 
-import java.awt.TrayIcon.MessageType;
 import java.util.logging.Logger;
 
 import org.apache.mina.core.buffer.IoBuffer;
@@ -9,7 +8,6 @@ import org.apache.mina.filter.codec.CumulativeProtocolDecoder;
 import org.apache.mina.filter.codec.ProtocolDecoderOutput;
 
 import cn.mina.distribute.MsgPackage;
-import cn.mina.distribute.MsgType;
 import cn.mina.distribute.MsgType.ClientSendType;
 
 public class CustomMsgDecoder extends CumulativeProtocolDecoder{
@@ -43,13 +41,6 @@ public class CustomMsgDecoder extends CumulativeProtocolDecoder{
 				
 				out.write(new MsgPackage(ClientSendType.values()[type], bytes));
 				
-//				Custom.LRequest request = Custom.LRequest.parseFrom(bytes);
-//				if (null != request) {
-//					logger.info("request  " + request.getNEmployeeID());
-//					logger.info("request  " + request.getStrSerialNumber());
-//					logger.info("request  " + request.getStrUrl());
-//					out.write(request);
-//				} 
 				return true;// 这里有两种情况1：没数据了，那么就结束当前调用，有数据就再次调用
 			}
 		}
