@@ -12,15 +12,6 @@ public class UIRootManager : MonoBehaviour {
 
 	public List<PageInfo> listPage;
 
-	void Awake(){
-		foreach(var view in listPage){
-			ViewBase page = view.goView.GetComponent<ViewBase>();
-			if(null != page){
-//				page.
-			}
-		}
-	}
-
 	public void ShowPage(string szPageName){
 		foreach(var pageInfo in listPage){
 			if(pageInfo.szPageName.Equals(szPageName)){

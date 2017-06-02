@@ -1,0 +1,15 @@
+package onl;
+
+option java_package = "cn.mina.msg";
+option java_outer_classname = "OnlProto";
+
+message User{
+	optional int32 account = 1;
+	optional string password = 2;
+	optional string nickname = 3;
+	optional CustomInt verification = 4；
+}
+
+message CustomInt{
+	optional int32 workInt = 1;
+} 
